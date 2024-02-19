@@ -9,37 +9,34 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar w-full p-[15px] h-[9vh] bg-white flex">
+    <nav class="navbar w-full p-[15px] h-[9vh] bg-teal-300 flex">
       <div class="w-full h-full flex items-center justify-between">
         <a class="text-3xl font-bold">My Notes</a>
 
-        <form class="flex items-center  	background-color: rgb(180 83 9);
-        bg-amber-500  rounded-[5px] px-[10px] py-[5px]" role="search">
+        <form class="flex items-center  gap-1.5	
+          rounded-[5px] px-[10px] py-[5px]" role="search">
             <input id="searchTxt" class="outline-none" type="search" placeholder="Search" aria-label="Search">
             <i class="ri-search-line"></i>
         </form>
         <div class="profile flex items-center gap-[10px]">
             <button
-                class=" bg-slate-600 add-new p-[10px] text-[15px] font-bold text-white bg-black-900 rounded-[5px] flex justify-center items-center">Add
+                class=" bg-white add-new p-[10px] text-[15px] font-bold text-black  rounded-[5px] flex justify-center items-center">Add
                 new note <i class="ri-add-line"></i></button>
-            <h1 class="text-xl">Vishal RAJPUT</h1>
-            <div class="circle h-[8vh] w-[8vh] bg-black rounded-full overflow-hidden">
-                <img src="puja image" alt="">
-            </div>
+        
         </div>
 
     </div>
     </nav>
-    <div id="main" class="h-[91vh] w-[100%] bg-gray-100 relative flex items-start gap-[5px]">
+    <div id="main" class="h-[91vh] w-[100%]  bg-slate-300 relative flex items-start gap-[5px]">
       <div id="notes" class="flex flex-wrap">
 
       </div>
   </div>
 </header>
 <div
-  class="make-remember h-[60vh] w-[40vw] bg-slate-600 rounded-[5px] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] shadow-lg p-2 flex flex-col  gap-[15px]">
+  class="make-remember h-[60vh] w-[40vw] bg-teal-300 rounded-[5px] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] shadow-lg p-2 flex flex-col  gap-[15px]">
   <div class=" text-2xl font-bold flex justify-between items-center">
-      <h1 class="text-slate-50  py-[10px] rounded-[5px] font-serif">Welcome to keep notes
+      <h1 class="text-black-  py-[10px] rounded-[5px] font-serif">Welcome to keep notes
       </h1>
 
       <i id="close" class="ri-close-line"></i>
@@ -53,7 +50,7 @@
       placeholder="Write your note here..." cols="20" rows="5"></textarea>
   <div id="addbtn" class="flex gap-[40px]">
       <button
-          class="bg--700 text-lg text-slate-50 font-bold p-[8px] rounded-[5px] text-start w-[100px] mt-[20px]">Add
+          class="bg--700 text-lg text-black-50 bg-white cursor-pointer text-[15px] font-semibold py-[8px] rounded-[5px] px-[12px] my-[10px">Add
           Note</button>
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>

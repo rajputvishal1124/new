@@ -67,7 +67,7 @@ function shownotes() {
     notesObj.forEach(function (note, index) {
         let randomColor = getRandomColor();
         const formattedDateTime = formatDateTime(note.dateTime);
-        html += ` <div id="notecard" class="w-[18vw] px-[10px] py-[5px] bg-[${randomColor}] text-start rounded-[10px] m-[10px]">
+        html += ` <div id="notecard" class="w-[18vw] px-[10px] py-[5px] bg-green-200 text-start rounded-[10px] m-[10px]">
         <h5 class="text-xl font-semibold">${note.title}</h5>
         <hr>
         <p class="my-[5px]">${note.text}</p>
@@ -75,7 +75,7 @@ function shownotes() {
         <hr>
         <p class="text-black text-sm">${formattedDateTime}</p>
          <hr>
-        <button id="${index}" onclick ="deleteNote(this.id)"  class="bg-white cursor-pointer text-[15px] font-semibold py-[8px] rounded-[5px] px-[12px] my-[10px]">Delete
+        <button id="${index}" onclick ="${deleteNote(index)}"  class="bg-white cursor-pointer text-[15px] font-semibold py-[8px] rounded-[5px] px-[12px] my-[10px]">Delete
             note</button>
     </div>`
     });
