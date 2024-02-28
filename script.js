@@ -67,7 +67,7 @@ function shownotes() {
     notesObj.forEach(function (note, index) {
         let randomColor = getRandomColor();
         const formattedDateTime = formatDateTime(note.dateTime);
-        html += ` <div id="notecard" class="w-[18vw] px-[10px] py-[5px] bg-green-200 text-start rounded-[10px] m-[10px]">
+        html += ` <div id="notecard" class="w-[18vw] px-[10px] py-[5px] bg-teal-100 text-start rounded-[10px] m-[10px]">
         <h5 class="text-xl font-semibold">${note.title}</h5>
         <hr>
         <p class="my-[5px]">${note.text}</p>
